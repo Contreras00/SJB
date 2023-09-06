@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Página sin título</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="Sin_titulo1.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var DropdownMenu1_dropdownToggle = document.querySelectorAll('#DropdownMenu1 .dropdown-toggle');
+   DropdownMenu1_dropdownToggle.forEach(item => 
+   {
+      var dropdown = new bootstrap.Dropdown(item, {popperConfig:{placement:item.getAttribute('data-bs-placement')}});
+   });
+   var DropdownMenu1_dropdown = document.querySelectorAll('#DropdownMenu1 .dropdown');
+   DropdownMenu1_dropdown.forEach(item => 
+   {
+      item.addEventListener('shown.bs.dropdown', function(e)
+      {
+         e.currentTarget.classList.add('show');
+      });
+      item.addEventListener('hidden.bs.dropdown', function(e)
+      {
+         e.currentTarget.classList.remove('show');
+      });
+   });
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#LayoutGrid4']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top }, 600, 'easeInSine');
+   });
+   $("a[href*='#contact']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top }, 600, 'easeOutCubic');
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Icon1" style="display:inline-block;width:24px;height:33px;text-align:center;z-index:0;">
+<a href="./index.html"><div id="Icon1"><i class="fa fa-phone"></i></div></a>
+</div>
+<label for="" id="Label1" style="display:inline-block;width:169px;line-height:17px;z-index:1;">Phone: +504 25526104</label>
+</div>
+<div class="col-2">
+<div id="wb_Icon2" style="display:inline-block;width:24px;height:33px;text-align:center;z-index:2;">
+<a href="./index.html"><div id="Icon2"><i class="fa fa-envelope-o"></i></div></a>
+</div>
+<label for="" id="Label2" style="display:inline-block;width:250px;line-height:17px;z-index:3;">Email: institutosanjuanbosco@hotmail.com</label>
+</div>
+<div class="col-3">
+</div>
+<div class="col-4">
+<div id="wb_Icon3" style="display:inline-block;width:24px;height:40px;text-align:center;z-index:4;">
+<a href="https://www.facebook.com/people/Instituto-San-Juan-Bosco/100063914528871/?locale=es_LA"><div id="Icon3"><i class="fa fa-facebook-square"></i></div></a>
+</div>
+<div id="wb_Icon4" style="display:inline-block;width:24px;height:40px;text-align:center;z-index:5;">
+<a href="https://wa.me/50425526104"><div id="Icon4"><i class="fa fa-whatsapp"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="col-1">
+<div id="wb_Image5" style="display:inline-block;width:50px;height:50px;z-index:6;">
+<img src="images/Logo.jpg" id="Image5" alt="" width="50" height="50">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Heading2" style="display:inline-block;width:212px;height:24px;z-index:7;">
+<h1 id="Heading2">San Juan Bosco</h1>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_DropdownMenu1" style="display:inline-block;width:100%;z-index:8;">
+<div id="DropdownMenu1" class="DropdownMenu1" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button title="" type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".DropdownMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="DropdownMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a href="" class="nav-link" onclick="window.location.href='./index.html';return false;">Inicio</a>
+</li>
+<li class="nav-item dropdown">
+<a href="#" class="dropdown-toggle" data-bs-placement="bottom-start" data-bs-toggle="dropdown">Quienes somos<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li class="nav-item dropdown-item">
+<a href="" class="nav-link" onclick="window.location.href='./Historia.html';return false;">Nuestra historia</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="" class="nav-link" onclick="window.location.href='./Mision-y-Vision.html';return false;">Mision y Vision</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" class="dropdown-toggle" data-bs-placement="bottom-start" data-bs-toggle="dropdown">Opciones academicas<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li class="nav-item dropdown-item">
+<a href="" class="nav-link" onclick="window.location.href='./Prebasica-y-basica.html';return false;">Pre-Basica y Basica</a>
+</li>
+<li class="nav-item dropdown-item">
+<a href="" class="nav-link" onclick="window.location.href='./Jorndas.html';return false;">Jornada</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:9;">
+<img src="images/Profesores.jpg" id="Image2" alt="" width="940" height="529">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contact">
+<div id="contact">
+<div class="col-1">
+<div id="wb_Image4" style="display:inline-block;width:100%;height:auto;z-index:10;">
+<img src="images/Logo.jpg" id="Image4" alt="" width="293" height="293">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:11;">
+<h1 id="Heading1">Nuestra Ubicacion</h1>
+</div>
+<div id="wb_Image3" style="display:inline-block;width:100%;height:auto;z-index:12;">
+<a href="https://www.google.com/maps/place/Escuela+e+Instituto+San+Juan+Bosco/@15.5075547,-88.0179591,15z/data=!4m10!1m2!2m1!1sgoogle+maps+san+juan+bosco!3m6!1s0x8f6644b3dda4c393:0x22bcd49838c9d9e6!8m2!3d15.507555!4d-88.0073902!15sChpnb29nbGUgbWFwcyBzYW4ganVhbiBib3NjbyIDiAEBkgEGc2Nob29s4AEA!16s%2Fg%2F11dxl152kq?entry=ttu"><img src="images/map.png" id="Image3" alt="" width="596" height="443"></a>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text2">
+<span style="color:#979797;font-family:Arial;font-size:13px;">Copyright (c) 2022 San Juan Bosco</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
